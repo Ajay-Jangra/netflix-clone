@@ -1,0 +1,59 @@
+.row {
+  margin-left: 10px;
+  color: #fff;
+}
+.row_posters {
+  /* height: 280px; */
+
+  margin: auto 10px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+  outline: none;
+}
+
+.row_posters::-webkit-scrollbar {
+  /*   this will tell all the browser that scrollbar line is not displaying */
+  display: none;
+}
+.row_poster {
+  object-fit: contain;
+  max-height: 200px;
+  width: 100%;
+  margin: auto 5px;
+  transition: transform 450ms;
+}
+.row_poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+.row_posterLarge {
+  max-height: 280px;
+}
+.row_posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: small;
+  }
+  .row{
+    margin-left: 3px;
+  }
+  .row_poster {
+    height: 75%;
+    min-width: 50%;
+    margin: auto 2px;
+  }
+  .row_posters {
+  /* height: 280px; */
+
+  margin: auto 5px;
+   
+  padding: 10px;
+  
+}
+}
